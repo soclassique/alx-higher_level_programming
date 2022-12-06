@@ -2,12 +2,16 @@
 
 def delete_at(my_list=[], idx=0):
 
-idx <= len(my_list) - 1
+    list_len = len(my_list)
 
-    if idx < 0 or idx > len(my_list) - 1:
+    if idx < 0 or idx > list_len - 1:
 
         return my_list
 
-    del my_list[idx]
+    else:
 
-    return my_list
+        del my_list[idx]
+
+        new_list = my_list
+
+    return new_list
